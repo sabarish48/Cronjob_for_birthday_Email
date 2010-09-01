@@ -13,5 +13,20 @@ config.action_controller.consider_all_requests_local = true
 config.action_view.debug_rjs                         = true
 config.action_controller.perform_caching             = false
 
+config.action_mailer.perform_deliveries = true
+config.action_mailer.default_url_options = { :host => "localhost:3000" }
+
+
+
+ActionMailer::Base.smtp_settings = {
+                    :tls            => true,
+                    :address        => "smtp.gmail.com",
+                    :port           => 580,
+                    :domain         => "mail.google.com",
+                    :authentication => :plain,
+                    :user_name      => "sabarishsankar89@gmail.com",
+                    :password       => "trojans_41"
+}
+
 # Don't care if the mailer can't send
 config.action_mailer.raise_delivery_errors = false

@@ -2,4 +2,14 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  email_texts:
+    generic:
+      from: Trojans
+      reply_to: Trojans
+      regards: Regards,
+      your_friends: Your Friends (Trojans)
+    birthday_notification:
+      subject: Happy Birthday
+      completed_age: Completed Age
+      wishing: Wishing a Many more happy returns of the day to
+      good_year: Have a Successful year ahead.

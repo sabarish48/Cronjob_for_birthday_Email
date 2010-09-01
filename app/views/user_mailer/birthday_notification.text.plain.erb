@@ -1,0 +1,9 @@
+
+<% @bdays.each do |bday|%>
+    <%= "Wishing a Many more happy returns of the day to" %>
+    <%= "#{bday.name}" %>
+    <%= "Completed Age:" %> : <%= "#{Time.now.year - bday.date_of_birth.year}" %>
+    <%= "Have a Successful year ahead." %>
+  <% end %>
+
+<%= render :partial => 'user_mailer/footer' %>

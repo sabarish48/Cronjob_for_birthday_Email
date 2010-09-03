@@ -8,7 +8,7 @@ class UserTest < ActiveSupport::TestCase
       User.send_birthday_notification
     end
     bday_email = ActionMailer::Base.deliveries[-1]  
-    assert_match(/Wishing a Many more happy returns of the day to/, bday_email.body)
+    assert_match(/Wishing Many more happy returns of the day to/, bday_email.body)
     assert_match(/Regards/, bday_email.body)
     assert_match(/Trojans/, bday_email.body)
   end

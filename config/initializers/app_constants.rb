@@ -1,5 +1,5 @@
 module Trojans
   NAME  = "Trojans"
-  EMAIL = "sabarishsankar89@gmail.com"
-  FROM_EMAIL = "thiyagu.ily@gmail.com"
+  EMAIL = "trojans41@googlegroups.com"
+  FROM_EMAIL = "trojans41@googlegroups.com"
 end

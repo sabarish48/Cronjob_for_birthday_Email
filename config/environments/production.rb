@@ -13,7 +13,21 @@ config.cache_classes = true
 # Full error reports are disabled and caching is turned on
 config.action_controller.consider_all_requests_local = false
 config.action_controller.perform_caching             = true
+config.action_mailer.delivery_method = :smtp
 
+config.action_mailer.perform_deliveries = true
+config.action_mailer.default_url_options = { :host => "localhost:3000" }
+
+
+config.action_mailer.smtp_settings = {
+                    :tls            => true,
+                    :address        => "smtp.gmail.com",
+                    :port           => 25,
+                    :domain         => "gmail.com",
+                    :authentication => :plain,
+                    :user_name      => "trojans41.mailer@gmail.com",
+                    :password       => "trojans41"
+}
 # Use a different cache store in production
 # config.cache_store = :mem_cache_store
 
@@ -21,4 +35,4 @@ config.action_controller.perform_caching             = true
 # config.action_controller.asset_host                  = "http://assets.example.com"
 
 # Disable delivery errors, bad email addresses will be ignored
-# config.action_mailer.raise_delivery_errors = false
+config.action_mailer.raise_delivery_errors = true

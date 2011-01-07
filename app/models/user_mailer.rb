@@ -8,7 +8,7 @@ class UserMailer < ActionMailer::Base
 
   def setup_email(user)    
     @recipients = "#{Trojans::EMAIL}"
-    @from = "From <#{Trojans::FROM_EMAIL}>"
+    @from = "Trojans <#{Trojans::FROM_EMAIL}>"
     @reply_to = "To <#{Trojans::FROM_EMAIL}>"
     @subject = "Happy Birthday"
     @sent_on = Time.now

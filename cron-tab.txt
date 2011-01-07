@@ -1,0 +1,1 @@
+#0 0 * * * cd /root/Cronjob_for_birthday_Email && rake user:birthday_notification:send RAILS_ENV=production >> /root/Cronjob_for_birthday_Email/log/extraction_cron.output  2>&1

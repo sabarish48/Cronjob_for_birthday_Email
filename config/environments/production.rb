@@ -12,11 +12,12 @@ config.cache_classes = true
 
 # Full error reports are disabled and caching is turned on
 config.action_controller.consider_all_requests_local = false
+config.action_view.debug_rjs                         = true
 config.action_controller.perform_caching             = true
 config.action_mailer.delivery_method = :smtp
 
 config.action_mailer.perform_deliveries = true
-config.action_mailer.default_url_options = { :host => "localhost:3000" }
+config.action_mailer.default_url_options = { :host => "trojans.heroku.com" }
 
 
 config.action_mailer.smtp_settings = {

@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
     User.find(:all).each do |user|
       dob = user.date_of_birth
       if dob.day == Time.now.day && dob.month == Time.now.month
-        puts "hello working"
+        puts "hello working #{user.name}"
         birthdays << user
       end
     end
